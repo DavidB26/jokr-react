@@ -24,6 +24,11 @@ dist-ssr
 *.sw?
 
 .pnp.*
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/cache
+.pnp.js
+.pnp.data.json
 .yarn/*
 !.yarn/patches
 !.yarn/plugins
