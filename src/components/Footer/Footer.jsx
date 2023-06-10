@@ -1,11 +1,18 @@
 function Footer() {
   return (
-    <div class="flex justify-center">
+    <div className="flex justify-center">
       <div>
-        <img src="src/assets/logo-footer.png" alt="logo footer" />
+        <div >
+          <img className="w-24 img-fluid" src="src/assets/logo-footer.png" alt="logo footer" />
+        </div>
+        <div>
+          <p>JOKR Perú SAC Miraflores - Lima</p>
+          <p> Av. Hipólito Unanue 251</p>
+          <p>Miraflores - Lima</p>
+        </div>
       </div>
       <div>
-        <img class="" src="src/assets/bullets.png" alt="Bullets" />
+        <img src="src/assets/bullets.png" alt="Bullets" />
       </div>
     </div>
   );
