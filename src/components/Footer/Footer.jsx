@@ -1,11 +1,11 @@
 function Footer() {
   return (
-    <div class="flex justify-center">
+    <div className="flex">
       <div>
-        <img src="src/assets/logo-footer.png" alt="logo footer" />
+        <img src="src/assets/logo-footer.png" alt="logo footer" width={300} />
       </div>
       <div>
-        <img class="" src="src/assets/bullets.png" alt="Bullets" />
+        <img src="src/assets/bullets.png" alt="Bullets" width={300}/>
       </div>
     </div>
   );
