@@ -41,15 +41,19 @@ function Manifest() {
           </p>
         </div>
         <div className="">
+
           <div className="m-auto bg-blue-jokr">
           <div className="pr-4 py-7 pl-14 w-100">
               <video controls>
+=======
+          <div className="relative m-auto mr-0 bg-blue-jokr w-72 h-158">
+              <video className="absolute h-145 top-2 right-4" controls>
+
                 <source
                   type="video/webm"
                   src="src/assets/video-manifiesto.mp4"
                 />
               </video>
-            </div>
           </div>
         </div>
     </div>
