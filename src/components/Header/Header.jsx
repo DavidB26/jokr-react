@@ -8,7 +8,7 @@ function Header() {
   return (
     <header className="bg-dark-blue-jokr">
       <Wrapper>
-        <div className="flex items-center justify-between p-4 sm:px-10">
+        <div className="flex items-center justify-between py-4">
           <Link to="/">
             <LogoJokr />
           </Link>
