@@ -1,8 +1,9 @@
 function Footer() {
+  const currentYear = new Date().getFullYear() 
   return (
-    <div className="bg-dark-blue-jokr py-12 px-10">
-      <div className=" flex justify-between flex-col lg:flex-row gap-9">
-        <div className=" gap-2 flex justify-center  items-center ">
+    <div className="px-10 py-12 bg-dark-blue-jokr">
+      <div className="flex flex-col justify-between lg:flex-row gap-9">
+        <div className="flex items-center justify-center gap-2 ">
           <div>
             <img
               className="w-24 img-fluid"
@@ -21,25 +22,25 @@ function Footer() {
         </div>
       </div>
 
-      <div className="p-3 lg:mt-20 text-center lg:text-left">
-        <a className="text-grey-jokr cursor-pointer underline text-lg" href="">
+      <div className="p-3 text-center lg:mt-20 lg:text-left">
+        <a className="text-lg underline cursor-pointer text-grey-jokr" href="">
           Campañas promocionales
         </a>
       </div>
       <div className="p-3 text-center lg:text-left">
-        <a className="text-grey-jokr cursor-pointer underline text-lg" href="">
+        <a className="text-lg underline cursor-pointer text-grey-jokr" href="">
           Términos y condiciones
         </a>
       </div>
       <div className="p-3 text-center lg:text-left">
-        <a className="text-grey-jokr cursor-pointer underline text-lg" href="">
+        <a className="text-lg underline cursor-pointer text-grey-jokr" href="">
           Política de privacidad
         </a>
       </div>
 
-      <div className="p-3 text-center lg:text-left flex items-center justify-between flex-col lg:flex-row gap-5  lg:gap-0">
-        <p className="text-grey-jokr cursor-pointer  text-lg">@jokrperu</p>
-        <p className="text-grey-jokr cursor-pointer  text-xs">© 2023 by JOKR SAC</p>
+      <div className="flex flex-col items-center justify-between gap-5 p-3 text-center lg:text-left lg:flex-row lg:gap-0">
+        <p className="text-lg cursor-pointer text-grey-jokr">@jokrperu</p>
+        <p className="text-xs cursor-pointer text-grey-jokr">© {currentYear} by JOKR SAC</p>
       </div>
     
     </div>

@@ -7,11 +7,11 @@ export const menuItems = [
     submenu: [
       {
         title: "Que hacemos",
-        url: "",
+        url: "#what-we-do",
       },
       {
         title: "Como funciona",
-        url: "",
+        url: "#how-it-works",
       },
       {
         title: "Nuestro manifiesto",

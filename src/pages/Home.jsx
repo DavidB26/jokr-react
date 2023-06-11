@@ -53,7 +53,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col justify-center gap-4 px-4 py-16 bg-dark-blue-jokr lg:flex-row">
+      <section id="what-we-do" className="flex flex-col justify-center gap-4 px-4 py-16 bg-dark-blue-jokr lg:flex-row">
         <div className="pb-8 text-center lg:pb-0">
           <img
             className="w-32 pb-5 m-auto"
@@ -147,7 +147,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col items-center justify-around px-4 py-16 bg-white lg:flex-row ">
+      <section id="how-it-works" className="flex flex-col items-center justify-around px-4 py-16 bg-white lg:flex-row ">
         <div className="flex flex-col items-center justify-center pb-12 lg:pb-12 ">
           <div className="h-36 lg:h-28">
             <img
