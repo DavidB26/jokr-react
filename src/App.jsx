@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home'
 import Layout from './components/Layout';
 import About from './pages/About';
-import Media from './pages/Media';
+import Media from './pages/Media/Media';
 import Sustentability from './pages/Sustentability';
 import Contact from './pages/Contact';
 import Manifest from './pages/Manifest';

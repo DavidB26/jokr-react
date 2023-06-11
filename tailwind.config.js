@@ -6,11 +6,8 @@ export default {
       colors: {
         "grey-jokr": "#7D9DB7",
         "grey2-jokr": "#85A2B3",
-
-        "blue-jokr": "#063965",
-
         "grey3-jokr": "#A8C3DC",
-
+        "blue-jokr": "#063965",
         "dark-blue-jokr": "#032039",
         "light-blue-jokr": "#073F70",
         "green-jokr": "#57E39E",
@@ -23,6 +20,7 @@ export default {
         145: "36.25rem",
         158: "39.5rem",
         162: "40.625rem",
+        170: "42.5rem"
       },
       maxWidth: {
         "8xl": "85.375rem",
