@@ -4,7 +4,7 @@ function Home() {
   return (
     <>
       <section className="p-4 bg-light-blue-jokr">
-        <Wrapper>
+       <Wrapper>
           <div className="flex flex-col items-center justify-center lg:flex-row">
             <div>
               <div>
@@ -61,7 +61,7 @@ function Home() {
       </section>
 
       <section id="what-we-do" className="bg-dark-blue-jokr">
-        <Wrapper>
+      <Wrapper>
           <div className="flex flex-col justify-center gap-4 px-4 py-16 lg:flex-row">
             <div className="pb-8 text-center lg:pb-0">
               <img
@@ -72,7 +72,7 @@ function Home() {
               <h2 className="pb-5 text-2xl text-grey-jokr">
                 Envío al instante
               </h2>
-              <p className="text-base text-green-jokr lg:w-96">
+              <p className="text-base text-green-jokr ">
                 El tiempo lo es todo, estaremos en tu puerta más rápido de lo
                 que te imaginas.
               </p>
@@ -86,7 +86,7 @@ function Home() {
               <h2 className="pb-5 text-2xl text-grey-jokr">
                 Productos de calidad
               </h2>
-              <p className="text-base text-green-jokr lg:w-96">
+              <p className="text-base text-green-jokr ">
                 Tenemos tus productos y marcas favoritas para asegurarnos que
                 encuentres todo lo que amas.
               </p>
@@ -98,7 +98,7 @@ function Home() {
                 alt="Tarjeta"
               />
               <h2 className="pb-5 text-2xl text-grey-jokr">Precios justos</h2>
-              <p className="text-base text-green-jokr lg:w-96">
+              <p className="text-base text-green-jokr ">
                 Disfruta de las mejores promociones sin necesidad de alcanzar un
                 monto mínimo.
               </p>
@@ -110,7 +110,7 @@ function Home() {
                 alt="Eco"
               />
               <h2 className="pb-5 text-2xl text-grey-jokr">Un mundo mejor</h2>
-              <p className="text-base text-green-jokr lg:w-96">
+              <p className="text-base text-green-jokr ">
                 Impulsamos el cero desperdicio de comida, tiempo y dinero. ¡Sólo
                 compra lo que necesites, cuando lo necesites!
               </p>
@@ -121,7 +121,7 @@ function Home() {
 
       <section className="p-4 lg:p-12 bg-light-blue-jokr">
         <Wrapper>
-          <div className="flex flex-col items-center justify-center lg:flex-row lg:gap-20">
+          <div className="flex flex-col items-center justify-around lg:flex-row lg:gap-20">
             <div>
               <h2 className="pb-6 text-3xl font-bold text-white lg:text-3xl">
                 Compra todo lo que necesites:

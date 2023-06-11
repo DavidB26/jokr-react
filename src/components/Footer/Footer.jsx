@@ -24,7 +24,7 @@ function Footer() {
             </div>
           </div>
           <div className="text-center ">
-            <img src="src/assets/bullets.png" alt="Bullets" />
+            <img className="w-142" src="src/assets/bullets.png" alt="Bullets" />
           </div>
         </div>
 
