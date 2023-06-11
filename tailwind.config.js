@@ -10,8 +10,12 @@ export default {
         "green-jokr": "#57E39E",
       },
       spacing:{
-        '1.5': '.375rem'
+        '1.5': '.375rem' ,
+        '132': '33.125rem',
+        '142': '34.625rem',
+        '162': '40.625rem'
       }
+      
     },
   },
   plugins: [],

@@ -6,38 +6,131 @@ function Home() {
     <>
       <Header />
 
-      <div className="bg-light-blue-jokr">
-        <div>
-          <h1 className="text-5xl text-white text-center">
-            Todo lo que necesitas,{" "}
-            <span className="text-green-jokr">en minutos</span>
-          </h1>
-          <p className="text-base text-white">El futuro del supermercado está aquí.
-En minutos te llevamos frutas, verduras, tus marcas favoritas y todo lo que necesitas.</p>
-        </div>
-        <div className="flex justify-around items-center">
+      <section className="p-4 bg-light-blue-jokr">
+        <div className="flex flex-col items-center justify-center lg:flex-row">
           <div>
-            <img src="src/assets/logo-green.png" alt="logo green jokr" />
-          </div>
-          <div>
-            <h2 className="text-green-jokr text-2xl">Descarga la <br/> App</h2>
-          </div>
-        </div>
-      </div>
+            <div>
+              <h1 className="block text-5xl text-center text-white lg:text-7xl lg:text-left">
+                Todo lo que <br /> necesitas, <br />
+                <span className="text-green-jokr">en minutos</span>
+              </h1>
+              <p className="block py-4 text-base text-center text-white lg:w-132 lg:text-2xl lg:text-left">
+                El futuro del supermercado está aquí. <br /> En minutos te
+                llevamos frutas, verduras, tus marcas favoritas y todo lo que
+                necesitas.
+              </p>
+            </div>
+            <div className="flex items-center justify-center gap-5 lg:justify-start">
+              <div>
+                <img
+                  className="w-16"
+                  src="src/assets/logo-green.png"
+                  alt="logo green jokr"
+                />
+              </div>
+              <div>
+                <h2 className="text-2xl leading-6 text-green-jokr">
+                  Descarga la <br /> App
+                </h2>
+              </div>
+            </div>
 
-      <div className="bg-dark-blue-jokr">
-          <div>
-            <img src="src/assets/cohete.png" alt="Cohete" />
-            <h2 className="text-grey-jokr text-2xl">Envío al instante</h2>
-            <p className="text-green-jokr text-base">El tiempo lo es todo, estaremos en tu puerta más rápido de lo que te imaginas.</p>
+            <div className="flex items-center justify-center gap-5 py-4 lg:flex-col lg:items-start">
+              <div>
+                <img
+                  src="src/assets/logo-google-play.png"
+                  alt="logo Play Store"
+                />
+              </div>
+
+              <div>
+                <img src="src/assets/logo-app-store.png" alt="Logo App Store" />
+              </div>
+            </div>
           </div>
-          <div>
-            <img src="src/assets/cohete.png" alt="Cohete" />
-            <h2 className="text-grey-jokr">Envío al instante</h2>
-            <p className="text-green-jokr">El tiempo lo es todo, estaremos en tu puerta más rápido de lo que te imaginas.</p>
+          <div className="">
+            <img className="lg:w-162" src="src/assets/banner-groceries.png" alt="" />
           </div>
         </div>
+      </section>
 
+      <section className="flex flex-col justify-center px-4 py-16 bg-dark-blue-jokr lg:flex-row">
+        <div className="pb-8 text-center lg:pb-0">
+          <img
+            className="w-32 pb-5 m-auto"
+            src="src/assets/cohete.png"
+            alt="Cohete"
+          />
+          <h2 className="pb-5 text-2xl text-grey-jokr">Envío al instante</h2>
+          <p className="text-base text-green-jokr">
+            El tiempo lo es todo, estaremos en tu puerta más rápido de lo que te
+            imaginas.
+          </p>
+        </div>
+        <div className="pb-8 text-center lg:pb-0">
+          <img
+            className="w-32 pb-5 m-auto"
+            src="src/assets/medalla.png"
+            alt="Medalla"
+          />
+          <h2 className="pb-5 text-2xl text-grey-jokr">Productos de calidad</h2>
+          <p className="text-base text-green-jokr">
+            Tenemos tus productos y marcas favoritas para asegurarnos que
+            encuentres todo lo que amas.
+          </p>
+        </div>
+        <div className="pb-8 text-center lg:pb-0">
+          <img
+            className="w-32 pb-5 m-auto"
+            src="src/assets/tarjeta.png"
+            alt="Tarjeta"
+          />
+          <h2 className="pb-5 text-2xl text-grey-jokr">Precios justos</h2>
+          <p className="text-base text-green-jokr">
+            Disfruta de las mejores promociones sin necesidad de alcanzar un
+            monto mínimo.
+          </p>
+        </div>
+        <div className="pb-8 text-center lg:pb-0">
+          <img
+            className="w-32 pb-5 m-auto"
+            src="src/assets/eco.png"
+            alt="Eco"
+          />
+          <h2 className="pb-5 text-2xl text-grey-jokr">Un mundo mejor</h2>
+          <p className="text-base text-green-jokr">
+            Impulsamos el cero desperdicio de comida, tiempo y dinero. ¡Sólo
+            compra lo que necesites, cuando lo necesites!
+          </p>
+        </div>
+      </section>
+
+      <section className="p-4 bg-light-blue-jokr">
+        <div className="flex flex-col items-center justify-center lg:flex-row lg:gap-10">
+          <div>
+            <h2 className="pb-6 text-3xl text-white">Compra todo lo que necesites:</h2>
+            <p className="text-base text-white lg:w-132 lg:text-2xl">
+              Compra todo lo que necesites: estás en una buena racha, pero es
+              momento de cambiar la rutina. Una forma más sencilla de comprar;
+              menos molesta, menos aburrida y mucho más libre.
+            </p>
+            <p className="text-base text-white lg:w-132 lg:text-2xl"> Una forma más
+              inteligente de hacer las compras en donde no saturas tu
+              refrigerador de comida ni desperdicias comida. Y además, que sea
+              un poco mágica... </p>
+            
+            <div className="py-14 lg:py-0">
+            <a className="text-3xl text-white " href="https://apps.apple.com/app/id1561652691?mt=8">Descargar la app</a>
+            </div>
+          </div>
+          <div>
+          <h2 className="pb-6 text-3xl text-white lg:pb-0 ">El futuro del <br className="lg:hidden"/> supermercado está <br className="lg:hidden"/>  aquí.</h2>
+          <div>
+            <img  className="w-142" src="src/assets/img2.png" alt="Bullets green" />
+          </div>
+          </div>
+        </div>
+      </section>
       <Footer />
     </>
   );
