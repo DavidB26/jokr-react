@@ -6,9 +6,6 @@ export default {
       colors: {
         "grey-jokr": "#7D9DB7",
         "grey2-jokr": "#85A2B3",
-
-        "blue-jokr": "#063965",
-
         "grey3-jokr": "#A8C3DC",
 
         "medium-blue-jokr": "#173F6D",
