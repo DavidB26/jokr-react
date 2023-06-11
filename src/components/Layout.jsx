@@ -4,7 +4,7 @@ import Footer from './Footer/Footer'
 
 function Layout() {
   return (
-    <div className="m-auto max-w-8xl">
+    <div>
       <Header/>
       <div>
         <Outlet/>
