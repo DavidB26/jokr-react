@@ -6,7 +6,9 @@ import Media from './pages/Media/Media';
 import Sustentability from './pages/Sustentability';
 import Contact from './pages/Contact';
 import Manifest from './pages/Manifest';
-
+import Campaigns from './pages/Campaigns';
+import Terms from './pages/Terms';
+import Politics from './pages/Politics';
 function App() {
 
   return (
@@ -15,10 +17,13 @@ function App() {
     <Route path='/' element={<Layout/>}>
       <Route index element={<Home/>}/>
       <Route path='about' element={<About/>}/>
-      <Route path='media' element={<Media/>}/>
-      <Route path='manifest' element={<Manifest/>}/>
+      <Route path='jokr-media' element={<Media/>}/>
+      <Route path='nuestro-manifiesto' element={<Manifest/>}/>
       <Route path='sustentabilidad' element={<Sustentability/>}/>
-      <Route path='contact' element={<Contact/>}/>
+      <Route path='contacto' element={<Contact/>}/>
+      <Route path='campanas-promocionales' element={<Campaigns/>}/>
+      <Route path='terminos-y-condiciones' element={<Terms/>}/>
+      <Route path='politicas-de-privacidad' element={<Politics/>}/>
     </Route>
     </Routes>
     </>
