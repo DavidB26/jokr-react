@@ -9,6 +9,9 @@ export default {
         "light-blue-jokr": "#073F70",
         "green-jokr": "#57E39E",
       },
+      spacing:{
+        '1.5': '.375rem'
+      }
     },
   },
   plugins: [],
