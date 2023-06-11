@@ -5,7 +5,7 @@ function Home() {
     <>
       <section className="p-4 bg-light-blue-jokr">
         <Wrapper>
-          <div className="flex flex-col items-center justify-center lg:flex-row">
+          <div className="flex flex-col items-center justify-center overflow-hidden lg:flex-row">
             <div>
               <div>
                 <h1 className="block text-5xl text-center text-white lg:text-7xl lg:text-left">
@@ -73,7 +73,7 @@ function Home() {
                     alt=""
                   />
                 </div>
-                <div className="absolute bottom-0 top-auto right-auto z-0 w-full -left-16">
+                <div className="absolute bottom-0 top-auto right-auto z-0 w-full animation-eclipse-white -left-16">
                   <img
                     className="w-[268px]"
                     src="src/assets/Ellipse3.png"
