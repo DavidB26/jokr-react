@@ -11,6 +11,8 @@ export default {
 
         "grey3-jokr": "#A8C3DC",
 
+        "medium-blue-jokr": "#173F6D",
+
         "dark-blue-jokr": "#032039",
         "light-blue-jokr": "#073F70",
         "green-jokr": "#57E39E",
@@ -18,11 +20,14 @@ export default {
       },
       spacing: {
         1.5: ".375rem",
+        123: "30.93rem",
         132: "33.125rem",
         142: "34.625rem",
         145: "36.25rem",
         158: "39.5rem",
         162: "40.625rem",
+        217:"54.375rem",
+        238: "59.375rem"
       },
       maxWidth: {
         "8xl": "85.375rem",
