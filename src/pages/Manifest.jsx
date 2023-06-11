@@ -3,10 +3,11 @@ function Manifest() {
   return (
     <section className="bg-dark-blue-jokr">
       <Wrapper>
-        <h2 className="text-5xl font-bold text-center lg:text-7xl text-green-jokr">
+        <h2 className="text-5xl font-bold text-center lg:text-left lg:text-7xl text-green-jokr">
           Nuestro <br className="hidden lg:block" /> manifiesto
         </h2>
-        <div className="px-4 lg:px-0">
+    <div className="flex lg:flex-row">
+    <div className="px-4 lg:px-0 lg:w-142">
           <p className="text-base lg:text-2xl text-grey-jokr">
             Es una realidad, nos gusta planear todo en la vida. Pero las mejores
             cosas no siempre siguen planes. Sólo se trata de disfrutar cada
@@ -40,8 +41,8 @@ function Manifest() {
           </p>
         </div>
         <div className="">
-          <div className="relative m-auto mr-0 bg-blue-jokr w-72 h-96">
-          <div className="absolute pr-4 py-7 pl-14">
+          <div className="m-auto bg-blue-jokr">
+          <div className="pr-4 py-7 pl-14 w-100">
               <video controls>
                 <source
                   type="video/webm"
@@ -51,6 +52,7 @@ function Manifest() {
             </div>
           </div>
         </div>
+    </div>
       </Wrapper>
     </section>
   );
