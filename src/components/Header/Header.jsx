@@ -1,10 +1,10 @@
+import LogoJokr from '../Logo-jokr'
 
 function Header() {
   return (
-    <div className="flex flex-row h-4 sm:flex-col bg-green-jokr">
-      <div className="">holas</div>
-      <div className="">hola</div>
-    </div>
+    <header className="p-4 bg-dark-blue-jokr">
+      <LogoJokr/>
+    </header>
   )
 }
 
