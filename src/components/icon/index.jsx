@@ -1,3 +1,5 @@
+import ChevronDown from "./chevron-down"
+import ChevronUp from "./chevron-up"
 import Facebook from "./facebook"
 import Instagram from "./instagram"
 import Linkedin from "./linkedin"
@@ -13,6 +15,12 @@ function Index({name,...props}) {
     case 'linked-in':{
       return <Linkedin {...props} />
     }
+    case 'chevron-down':{
+      return <ChevronDown {...props} />
+    }
+    case 'chevron-up':{
+      return <ChevronUp {...props} />
+    }
     default: {
       return null
     }
@@ -21,7 +29,6 @@ function Index({name,...props}) {
 
 Index.defaultProps = {
   size: 16,
-  color: 'var(--grey)'
 }
 
 export default Index
