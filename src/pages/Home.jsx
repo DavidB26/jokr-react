@@ -54,7 +54,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col justify-center px-4 py-16 bg-dark-blue-jokr lg:flex-row">
+      <section className="flex flex-col justify-center gap-4 px-4 py-16 bg-dark-blue-jokr lg:flex-row">
         <div className="pb-8 text-center lg:pb-0">
           <img
             className="w-32 pb-5 m-auto"
@@ -62,8 +62,8 @@ function Home() {
             alt="Cohete"
           />
           <h2 className="pb-5 text-2xl text-grey-jokr">Envío al instante</h2>
-          <p className="text-base text-green-jokr">
-            El tiempo lo es todo, estaremos en tu puerta más rápido de lo que te
+          <p className="text-base text-green-jokr lg:w-96">
+            El tiempo lo es todo, estaremos en tu puerta más  rápido de lo que te
             imaginas.
           </p>
         </div>
@@ -74,8 +74,8 @@ function Home() {
             alt="Medalla"
           />
           <h2 className="pb-5 text-2xl text-grey-jokr">Productos de calidad</h2>
-          <p className="text-base text-green-jokr">
-            Tenemos tus productos y marcas favoritas para asegurarnos que
+          <p className="text-base text-green-jokr lg:w-96">
+            Tenemos tus productos y marcas favoritas para  asegurarnos que
             encuentres todo lo que amas.
           </p>
         </div>
@@ -86,7 +86,7 @@ function Home() {
             alt="Tarjeta"
           />
           <h2 className="pb-5 text-2xl text-grey-jokr">Precios justos</h2>
-          <p className="text-base text-green-jokr">
+          <p className="text-base text-green-jokr lg:w-96">
             Disfruta de las mejores promociones sin necesidad de alcanzar un
             monto mínimo.
           </p>
@@ -98,37 +98,58 @@ function Home() {
             alt="Eco"
           />
           <h2 className="pb-5 text-2xl text-grey-jokr">Un mundo mejor</h2>
-          <p className="text-base text-green-jokr">
-            Impulsamos el cero desperdicio de comida, tiempo y dinero. ¡Sólo
+          <p className="text-base text-green-jokr lg:w-96">
+            Impulsamos el cero desperdicio de comida,  tiempo y dinero. ¡Sólo
             compra lo que necesites, cuando lo necesites!
           </p>
         </div>
       </section>
 
-      <section className="p-4 bg-light-blue-jokr">
-        <div className="flex flex-col items-center justify-center lg:flex-row lg:gap-10">
+      <section className="p-4 p-12 bg-light-blue-jokr">
+        <div className="flex flex-col items-center justify-center lg:flex-row lg:gap-20">
           <div>
-            <h2 className="pb-6 text-3xl text-white">Compra todo lo que necesites:</h2>
+            <h2 className="pb-6 text-3xl font-bold text-white lg:text-3xl">Compra todo lo que necesites:</h2>
             <p className="text-base text-white lg:w-132 lg:text-2xl">
               Compra todo lo que necesites: estás en una buena racha, pero es
               momento de cambiar la rutina. Una forma más sencilla de comprar;
               menos molesta, menos aburrida y mucho más libre.
             </p>
-            <p className="text-base text-white lg:w-132 lg:text-2xl"> Una forma más
+            <p className="text-base text-white lg:w-132 lg:text-2xl lg:pb-36"> Una forma más
               inteligente de hacer las compras en donde no saturas tu
               refrigerador de comida ni desperdicias comida. Y además, que sea
               un poco mágica... </p>
             
             <div className="py-14 lg:py-0">
-            <a className="text-3xl text-white " href="https://apps.apple.com/app/id1561652691?mt=8">Descargar la app</a>
+            <a className="text-3xl text-white lg:text-2xl" href="https://apps.apple.com/app/id1561652691?mt=8">Descargar la app</a>
             </div>
           </div>
           <div>
-          <h2 className="pb-6 text-3xl text-white lg:pb-0 ">El futuro del <br className="lg:hidden"/> supermercado está <br className="lg:hidden"/>  aquí.</h2>
+          <h2 className="pb-6 text-3xl font-bold text-white lg:pb-16 ">El futuro del <br className="lg:hidden"/> supermercado está <br className="lg:hidden"/>  aquí.</h2>
           <div>
             <img  className="w-142" src="src/assets/img2.png" alt="Bullets green" />
           </div>
           </div>
+        </div>
+      </section>
+
+      <section className="flex flex-col items-center justify-around px-4 py-16 bg-white lg:flex-row ">
+        <div className="flex flex-col items-center justify-center pb-12 lg:pb-12 ">
+           <div className="h-36 lg:h-28">
+           <img className="w-24 " src="src/assets/DescargaApp.png" alt="Descarga" />
+           </div>
+            <h3 className="text-2xl font-bold text-light-blue-jokr">Descarga la app</h3>
+        </div>
+        <div className="flex flex-col items-center justify-center pb-12 lg:pb-12 ">
+           <div className="h-36 lg:h-28">
+           <img className="w-24 " src="src/assets/EligeTusProductos.png" alt="Elige" />
+           </div>
+            <h3 className="text-2xl font-bold text-light-blue-jokr">Elige tus productos</h3>
+        </div>
+        <div className="flex flex-col items-center justify-center pb-12 lg:pb-12 ">
+         <div className="h-36 lg:h-28">
+         <img className="w-16 " src="src/assets/Recibe.png" alt="Recibe" />
+         </div>
+            <h3 className="text-2xl font-bold text-light-blue-jokr">Recíbelo en minutos</h3>
         </div>
       </section>
       <Footer />
