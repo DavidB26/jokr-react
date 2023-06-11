@@ -5,6 +5,7 @@ import About from './pages/About';
 import Media from './pages/Media';
 import Sustentability from './pages/Sustentability';
 import Contact from './pages/Contact';
+import Manifest from './pages/Manifest';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Route index element={<Home/>}/>
       <Route path='about' element={<About/>}/>
       <Route path='media' element={<Media/>}/>
+      <Route path='manifest' element={<Manifest/>}/>
       <Route path='sustentabilidad' element={<Sustentability/>}/>
       <Route path='contact' element={<Contact/>}/>
     </Route>

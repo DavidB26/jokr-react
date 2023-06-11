@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 
 function Header() {
   return (
-    <header className="flex justify-between p-4 bg-dark-blue-jokr sm:px-10">
+    <header className="flex items-center justify-between p-4 bg-dark-blue-jokr sm:px-10">
       <Link to="/">
         <LogoJokr />
       </Link>

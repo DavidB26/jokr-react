@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import Dropdown from "./Dropdown";
 import { Link } from "react-router-dom";
+import Icon from '../../icon/index';
 
 function MenuItem({ items }) {
   const [dropdown, setDropdown] = useState(false);
@@ -20,29 +21,36 @@ function MenuItem({ items }) {
     };
   }, [dropdown]);
 
-  const onMouseEnter = () => {
-    window.innerWidth > 960 && setDropdown(true);
-  };
+  // const onMouseEnter = () => {
+  //   window.innerWidth > 960 && setDropdown(true);
+  // };
 
-  const onMouseLeave = () => {
-    window.innerWidth > 960 && setDropdown(false);
-  };
+  // const onMouseLeave = () => {
+  //   window.innerWidth > 960 && setDropdown(false);
+  // };
 
   return (
-    <li ref={ref} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+    <li className="relative">
       {items.submenu ? (
         <>
           <button
+            className="flex items-center gap-1 duration-300 hover:text-green-jokr"
             aria-expanded={dropdown ? "true" : "false"}
             onClick={() => setDropdown((prev) => !prev)}
           >
             {items.title}
-            {""}
+            <Icon
+              name={dropdown ? "chevron-up" : "chevron-down"}
+              size="24"
+              color={dropdown ? "#57E39E" : "#7D9DB7"}
+            />
           </button>
           <Dropdown submenus={items.submenu} dropdown={dropdown} />
         </>
       ) : (
-        <Link to={items.url}>{items.title}</Link>
+        <Link to={items.url} className="duration-300 hover:text-green-jokr">
+          {items.title}
+        </Link>
       )}
     </li>
   );
