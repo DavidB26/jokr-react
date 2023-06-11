@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  scroll-behavior: smooth;
+}
+
 .animation-eclipse-red {
   animation: fade-in-down-big 1s forwards;
 }

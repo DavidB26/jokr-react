@@ -1,6 +1,6 @@
+import { Link } from "react-router-dom";
 import Wrapper from "../Wrapper";
-import Icon from "../Icon";
-
+import Terms from "../../pages/Terms";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -31,28 +31,28 @@ function Footer() {
         </div>
 
         <div className="p-3 text-center lg:mt-20 lg:text-left">
-          <a
+          <Link
             className="text-lg underline cursor-pointer text-grey-jokr"
-            href=""
+            to={"/campanas-promocionales"}
           >
             Campañas promocionales
-          </a>
+          </Link>
         </div>
         <div className="p-3 text-center lg:text-left">
-          <a
+          <Link
             className="text-lg underline cursor-pointer text-grey-jokr"
-            href=""
+            to={"/terminos-y-condiciones"}
           >
             Términos y condiciones
-          </a>
+          </Link>
         </div>
         <div className="p-3 text-center lg:text-left">
-          <a
+          <Link
             className="text-lg underline cursor-pointer text-grey-jokr"
-            href=""
+            to={"/politicas-de-privacidad"}
           >
             Política de privacidad
-          </a>
+          </Link>
         </div>
 
         <div className="flex flex-col items-center justify-between gap-5 p-3 text-center lg:text-left lg:flex-row lg:gap-0">

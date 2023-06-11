@@ -17,7 +17,7 @@ function App() {
     <Route path='/' element={<Layout/>}>
       <Route index element={<Home/>}/>
       <Route path='about' element={<About/>}/>
-      <Route path='jokr-media' element={<Media/>}/>
+      <Route path='media' element={<Media/>}/>
       <Route path='nuestro-manifiesto' element={<Manifest/>}/>
       <Route path='sustentabilidad' element={<Sustentability/>}/>
       <Route path='contacto' element={<Contact/>}/>

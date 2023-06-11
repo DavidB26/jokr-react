@@ -15,7 +15,7 @@ export const menuItems = [
       },
       {
         title: "Nuestro manifiesto",
-        url: "manifest",
+        url: "nuestro-manifiesto",
       },
       {
         title: "Sustentabilidad JOKR",
