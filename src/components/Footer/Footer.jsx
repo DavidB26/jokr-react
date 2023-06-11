@@ -1,4 +1,6 @@
 import Wrapper from "../Wrapper";
+import Icon from "../Icon";
+
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -59,6 +61,9 @@ function Footer() {
             © {currentYear} by JOKR SAC
           </p>
         </div>
+       
+     
+      
       </Wrapper>
     </footer>
   );

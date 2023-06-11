@@ -19,67 +19,81 @@
 }
 
 .animation-eclipse-green-1 {
-    animation: fade-in-left-big 1s forwards;
-  }
-  
-  @keyframes fade-in-left-big {
-    0% {
-      opacity: 0;
-      transform: translateX(-200px);
-    }
-  
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  animation: fade-in-left-big 1s forwards;
+}
+
+@keyframes fade-in-left-big {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
   }
 
-  .animation-eclipse-green-2 {
-    animation: fade-in-right-big 1s forwards;
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  @keyframes fade-in-right-big {
-    0% {
-      opacity: 0;
-      transform: translateX(200px);
-    }
-  
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+}
+
+.animation-eclipse-green-2 {
+  animation: fade-in-right-big 1s forwards;
+}
+
+@keyframes fade-in-right-big {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
   }
 
-  .animation-eclipse-white{
-    animation: fade-in-up-big 1s forwards;
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animation-eclipse-white {
+  animation: fade-in-up-big 1s forwards;
+}
+
+@keyframes fade-in-up-big {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
   }
 
-  @keyframes fade-in-up-big {
-    0% {
-        opacity: 0;
-        transform: translateY(200px);
-    }
-  
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .rebotar{
-    animation: rebotar;
-    animation-iteration-count: infinite;
-    animation-duration: 1.3s;
-    animation-timing-function: ease-in-out;
-    animation-direction: alternate-reverse;
+}
+
+.rebotar {
+  animation: rebotar;
+  animation-iteration-count: infinite;
+  animation-duration: 1.3s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes rebotar {
+  0% {
+    transform: translateX(-5px);
   }
 
-  @keyframes rebotar  {
-    0% {
-      transform: translateX(-5px);
-  }
-  
   100% {
     transform: translateX(5px);
-}
   }
+}
+
+.goTop {
+  padding: 5px;
+  border: 1px solid #7D9DB7;
+  color: #fff;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
