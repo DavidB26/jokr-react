@@ -8,6 +8,7 @@ export default {
         "grey2-jokr": "#85A2B3",
         "grey3-jokr": "#A8C3DC",
 
+        "blue-jokr" : "#063965",
         "medium-blue-jokr": "#173F6D",
 
         "dark-blue-jokr": "#032039",
