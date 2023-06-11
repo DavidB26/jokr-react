@@ -3,7 +3,7 @@ function Dropdown({ submenus, dropdown }) {
     <ul
       className={`${
         dropdown ? "block" : "hidden"
-      }  absolute p-4 flex flex-col gap-6 mt-4 bg-dark-blue-jokr right-0 top-full rounded-lg`}
+      }  absolute p-4 flex flex-col gap-6 mt-4 bg-dark-blue-jokr right-0 top-full rounded-lg z-40`}
     >
       {submenus.map((submenu, index) => (
         <li className="text-right" key={index}>
