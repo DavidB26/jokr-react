@@ -151,7 +151,6 @@ function Home() {
             <h3 className="text-2xl font-bold text-light-blue-jokr">Recíbelo en minutos</h3>
         </div>
       </section>
-      <Footer />
     </>
   );
 }
