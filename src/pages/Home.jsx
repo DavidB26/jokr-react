@@ -182,7 +182,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col justify-center px-4 pt-10 lg:pt-0 bg-green-jokr lg:flex-row lg:flex-row-reverse">
+      <section className="flex flex-col justify-center px-4 pt-10 lg:pt-0 bg-green-jokr lg:flex-row-reverse">
         <div className="flex flex-col items-center justify-center lg:items-start ">
           <h2 className="pb-8 text-5xl font-bold text-light-blue-jokr">
             ¡Crece tu marca con nosotros!
