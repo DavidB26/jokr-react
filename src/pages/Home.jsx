@@ -3,9 +3,9 @@ import Wrapper from "../components/Wrapper";
 function Home() {
   return (
     <>
-      <section className="p-4 bg-light-blue-jokr">
+      <section className="p-4 overflow-hidden bg-light-blue-jokr">
         <Wrapper>
-          <div className="flex flex-col items-center justify-center overflow-hidden lg:flex-row">
+          <div className="flex flex-col items-center justify-center lg:flex-row">
             <div>
               <div>
                 <h1 className="block text-5xl text-center text-white lg:text-7xl lg:text-left">
