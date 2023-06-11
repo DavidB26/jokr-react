@@ -4,7 +4,7 @@ function Home() {
   return (
     <>
       <section className="p-4 bg-light-blue-jokr">
-       <Wrapper>
+        <Wrapper>
           <div className="flex flex-col items-center justify-center lg:flex-row">
             <div>
               <div>
@@ -50,18 +50,61 @@ function Home() {
               </div>
             </div>
             <div className="">
+              <div className="relative hidden lg:block">
+                <img
+                  className="relative z-20 lg:w-164 "
+                  src="src/assets/banner-groceries.png"
+                  alt=""
+                />
+
+             
+
+                <div className="absolute top-0 bottom-auto right-auto z-0 w-full animation-eclipse-green-1 left-20">
+                  <img
+                    className="w-[212px]"
+                    src="src/assets/Ellipse1.png"
+                    alt=""
+                  />
+                </div>
+                <div className="animation-eclipse-red absolute top-12 bottom-auto left-auto z-30 w-full -right-[555px]">
+                  <img
+                    className="w-[149px]"
+                    src="src/assets/Ellipse2.png"
+                    alt=""
+                  />
+                </div>
+                <div className="absolute bottom-0 top-auto right-auto z-0 w-full -left-16">
+                  <img
+                    className="w-[268px]"
+                    src="src/assets/Ellipse3.png"
+                    alt=""
+                  />
+                </div>
+                <div className="animation-eclipse-green-2 absolute bottom-7 -right-[418px] top-auto left-auto z-0 w-full">
+                  <img
+                    className="w-[306px]"
+                    src="src/assets/Ellipse4.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div className="block lg:hidden">
               <img
-                className="lg:w-162"
-                src="src/assets/banner-groceries.png"
-                alt=""
-              />
+                  className="relative z-20 lg:w-164 "
+                  src="src/assets/banner-groceries-xs.webp"
+                  alt=""
+                />
+              </div>
+
+
             </div>
           </div>
         </Wrapper>
       </section>
 
       <section id="what-we-do" className="bg-dark-blue-jokr">
-      <Wrapper>
+        <Wrapper>
           <div className="flex flex-col justify-center gap-4 px-4 py-16 lg:flex-row">
             <div className="pb-8 text-center lg:pb-0">
               <img
@@ -138,13 +181,14 @@ function Home() {
                 además, que sea un poco mágica...{" "}
               </p>
 
-              <div className="py-14 lg:py-0">
+              <div className="flex items-center gap-2 py-14 lg:py-0">
                 <a
                   className="text-3xl text-white lg:text-2xl"
                   href="https://apps.apple.com/app/id1561652691?mt=8"
                 >
-                  Descargar la app
+                  Descargar la app 
                 </a>
+                <img className="w-3 rebotar" src="src/assets/arrow.png" alt="Arrow" />
               </div>
             </div>
             <div>
@@ -222,10 +266,10 @@ function Home() {
 
               <div className="mt-10 text-center">
                 <a
-                  className="px-24 py-4 text-2xl transition duration-75 ease-in delay-75 border-2 rounded-full cursor-pointer hover:bg-light-blue-jokr hover:text-white border-light-blue-jokr"
+                  className="px-16 py-3 text-2xl transition duration-75 ease-in delay-75 border-2 rounded-full cursor-pointer lg:px-24 lg:py-4 hover:bg-light-blue-jokr hover:text-white border-light-blue-jokr"
                   href=""
                 >
-                  Aprende más
+                  Aprende más 
                 </a>
               </div>
             </div>
