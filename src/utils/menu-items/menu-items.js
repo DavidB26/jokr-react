@@ -6,7 +6,7 @@ export const menuItems = [
     url: "/"
   },
   { title: "Sobre nosotros",
-    url: "/",
+    url: "/about",
     submenu: [
       {
         title: 'Que hacemos',
@@ -22,14 +22,14 @@ export const menuItems = [
       },
       {
         title: 'Sustentabilidad JOKR',
-        url: ''
+        url: 'sustentabilidad'
       },
       {
         title: 'Contáctanos',
-        url: ''
+        url: 'contact'
       },
     ]
   },
-  { title: "JOKR media", url: "/" },
-  { title: "Contáctanos", url: "/" },
+  { title: "JOKR media", url: "/media" },
+  { title: "Contáctanos", url: "/contact" },
 ];

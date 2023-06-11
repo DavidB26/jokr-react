@@ -1,11 +1,6 @@
-import Footer from "../components/Footer/Footer";
-import Header from "../components/Header/Header";
-
 function Home() {
   return (
     <>
-      <Header />
-
       <section className="p-4 bg-light-blue-jokr">
         <div className="flex flex-col items-center justify-center lg:flex-row">
           <div>
@@ -49,7 +44,11 @@ function Home() {
             </div>
           </div>
           <div className="">
-            <img className="lg:w-162" src="src/assets/banner-groceries.png" alt="" />
+            <img
+              className="lg:w-162"
+              src="src/assets/banner-groceries.png"
+              alt=""
+            />
           </div>
         </div>
       </section>
