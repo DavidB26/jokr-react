@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import Wrapper from "../Wrapper";
-import Terms from "../../pages/Terms";
 
 function Footer() {
   const currentYear = new Date().getFullYear();

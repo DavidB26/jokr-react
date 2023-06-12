@@ -21,12 +21,7 @@ export const menuItems = [
         title: "Sustentabilidad JOKR",
         url: "sustentabilidad",
       },
-      {
-        title: "Contáctanos",
-        url: "contact",
-      },
     ],
   },
   { title: "JOKR media", url: "/media" },
-  { title: "Contáctanos", url: "/contact" },
 ];
