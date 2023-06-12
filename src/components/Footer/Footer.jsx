@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Wrapper from "../Wrapper";
 import Terms from "../../pages/Terms";
+import Icon from "../Icon";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -55,12 +56,27 @@ function Footer() {
           </Link>
         </div>
 
+        <div className="flex items-center justify-start gap-3 p-3">
+        <Link rel="noopener noreferrer" to="https://www.facebook.com/jokrperu" target="_blank">
+         <Icon nameIcon={"facebook"} />
+        </Link>
+      <Link rel="noopener noreferrer" to="https://www.instagram.com/jokrperu/" target="_blank">
+      <Icon nameIcon={"instagram"} />
+      </Link>
+       <Link rel="noopener noreferrer" to="https://www.linkedin.com/company/jokr/" target="_blank">
+       <Icon nameIcon={"linked-in"} />
+        </Link>
+      </div>
+
         <div className="flex flex-col items-center justify-between gap-5 p-3 text-center lg:text-left lg:flex-row lg:gap-0">
           <p className="text-lg cursor-pointer text-grey-jokr">@jokrperu</p>
           <p className="text-xs cursor-pointer text-grey-jokr">
             © {currentYear} by JOKR SAC
           </p>
         </div>
+      
+    
+        
        
      
       
