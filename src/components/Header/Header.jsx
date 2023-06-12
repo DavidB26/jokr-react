@@ -6,7 +6,7 @@ import Wrapper from "../Wrapper";
 
 function Header() {
   return (
-    <header className="bg-dark-blue-jokr">
+    <header className="sticky top-0 z-50 bg-dark-blue-jokr">
       <Wrapper>
         <div className="flex items-center justify-between py-4">
           <Link to="/">
