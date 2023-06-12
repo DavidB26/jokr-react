@@ -6,9 +6,9 @@ function Manifest() {
     
         <div className="flex flex-col-reverse lg:items-start lg:justify-between lg:flex-row">
           <div className="px-4 lg:px-0 lg:w-142">
-          <h2 className="hidden pb-6 text-5xl font-bold text-center lg:block lg:text-left lg:text-7xl text-green-jokr">
+          <h1 className="hidden pb-6 text-5xl font-bold text-center lg:block lg:text-left lg:text-7xl text-green-jokr">
           Nuestro <br className="hidden lg:block" /> manifiesto
-        </h2>
+        </h1>
             <p className="pt-12 text-base lg:pt-0 lg:text-2xl text-grey-jokr">
               Es una realidad, nos gusta planear todo en la vida. <br /> Pero las
               mejores cosas no siempre siguen planes.<br /> Sólo se trata de disfrutar
