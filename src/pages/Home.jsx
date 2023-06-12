@@ -1,43 +1,49 @@
+import { Link } from "react-router-dom";
 import Wrapper from "../components/Wrapper";
+import { HashLink } from "react-router-hash-link";
 
 function Home() {
   return (
     <>
-      <section className="p-4 overflow-hidden bg-light-blue-jokr">
+      <section className="py-4 overflow-hidden md:pt-12 md:pb-24 bg-light-blue-jokr">
         <Wrapper>
-          <div className="flex flex-col items-center justify-center lg:flex-row">
+          <div className="flex flex-col items-center justify-center md:flex-row md:items-start">
             <div>
               <div>
-                <h1 className="block text-5xl text-center text-white lg:text-7xl lg:text-left">
+                <h1 className="block text-5xl font-bold text-center text-white md:text-7xl md:text-left">
                   Todo lo que <br /> necesitas, <br />
                   <span className="text-green-jokr">en minutos</span>
                 </h1>
-                <p className="block py-4 text-base text-center text-white lg:w-132 lg:text-2xl lg:text-left">
+                <p className="block py-4 text-base text-center text-white md:py-8 md:w-132 md:text-2xl md:text-left">
                   El futuro del supermercado está aquí. <br /> En minutos te
                   llevamos frutas, verduras, tus marcas favoritas y todo lo que
                   necesitas.
                 </p>
               </div>
-              <div className="flex items-center justify-center gap-5 lg:justify-start">
+              <div className="flex items-center justify-center gap-4 md:justify-start">
                 <div>
                   <img
                     className="w-16"
                     src="src/assets/logo-green.png"
                     alt="logo green jokr"
+                    width={54}
+                    height={54}
                   />
                 </div>
                 <div>
-                  <h2 className="text-2xl leading-6 text-green-jokr">
+                  <h2 className="text-2xl font-bold leading-6 text-green-jokr">
                     Descarga la <br /> App
                   </h2>
                 </div>
               </div>
 
-              <div className="flex items-center justify-center gap-5 py-4 lg:flex-col lg:items-start">
+              <div className="flex items-center justify-center gap-4 py-8 md:flex-col md:items-start">
                 <div>
                   <img
                     src="src/assets/logo-google-play.png"
                     alt="logo Play Store"
+                    width={200}
+                    height={60}
                   />
                 </div>
 
@@ -45,19 +51,19 @@ function Home() {
                   <img
                     src="src/assets/logo-app-store.png"
                     alt="Logo App Store"
+                    width={200}
+                    height={60}
                   />
                 </div>
               </div>
             </div>
             <div className="">
-              <div className="relative hidden lg:block">
+              <div className="relative hidden md:block">
                 <img
-                  className="relative z-20 lg:w-164 "
+                  className="relative z-20 md:w-164 "
                   src="src/assets/banner-groceries.png"
                   alt=""
                 />
-
-             
 
                 <div className="absolute top-0 bottom-auto right-auto z-0 w-full animation-eclipse-green-1 left-20">
                   <img
@@ -89,15 +95,13 @@ function Home() {
                 </div>
               </div>
 
-              <div className="block lg:hidden">
-              <img
-                  className="relative z-20 lg:w-164 "
+              <div className="block md:hidden">
+                <img
+                  className="relative z-20 md:w-164 "
                   src="src/assets/banner-groceries-xs.webp"
                   alt=""
                 />
               </div>
-
-
             </div>
           </div>
         </Wrapper>
@@ -105,8 +109,8 @@ function Home() {
 
       <section id="what-we-do" className="bg-dark-blue-jokr">
         <Wrapper>
-          <div className="flex flex-col justify-center gap-4 px-4 py-16 lg:flex-row">
-            <div className="pb-8 text-center lg:pb-0">
+          <div className="flex flex-col justify-center gap-4 py-16 md:flex-row">
+            <div className="pb-8 text-center md:pb-0">
               <img
                 className="w-32 pb-5 m-auto"
                 src="src/assets/cohete.png"
@@ -120,7 +124,7 @@ function Home() {
                 que te imaginas.
               </p>
             </div>
-            <div className="pb-8 text-center lg:pb-0">
+            <div className="pb-8 text-center md:pb-0">
               <img
                 className="w-32 pb-5 m-auto"
                 src="src/assets/medalla.png"
@@ -134,7 +138,7 @@ function Home() {
                 encuentres todo lo que amas.
               </p>
             </div>
-            <div className="pb-8 text-center lg:pb-0">
+            <div className="pb-8 text-center md:pb-0">
               <img
                 className="w-32 pb-5 m-auto"
                 src="src/assets/tarjeta.png"
@@ -146,7 +150,7 @@ function Home() {
                 monto mínimo.
               </p>
             </div>
-            <div className="pb-8 text-center lg:pb-0">
+            <div className="pb-8 text-center md:pb-0">
               <img
                 className="w-32 pb-5 m-auto"
                 src="src/assets/eco.png"
@@ -162,39 +166,45 @@ function Home() {
         </Wrapper>
       </section>
 
-      <section className="p-4 lg:p-12 bg-light-blue-jokr">
+      <section className="py-10 md:py-16 bg-light-blue-jokr">
         <Wrapper>
-          <div className="flex flex-col items-center justify-around lg:flex-row lg:gap-20">
+          <div className="flex flex-col items-center justify-around md:flex-row md:gap-20">
             <div>
-              <h2 className="pb-6 text-3xl font-bold text-white lg:text-3xl">
+              <h2 className="pb-6 text-3xl font-bold text-white md:text-3xl">
                 Compra todo lo que necesites:
               </h2>
-              <p className="text-base text-white lg:w-132 lg:text-2xl">
+              <p className="text-base text-white md:w-132 md:text-2xl">
                 Compra todo lo que necesites: estás en una buena racha, pero es
                 momento de cambiar la rutina. Una forma más sencilla de comprar;
                 menos molesta, menos aburrida y mucho más libre.
               </p>
-              <p className="text-base text-white lg:w-132 lg:text-2xl lg:pb-36">
+              <p className="text-base text-white md:w-132 md:text-2xl md:pb-36">
                 {" "}
                 Una forma más inteligente de hacer las compras en donde no
                 saturas tu refrigerador de comida ni desperdicias comida. Y
                 además, que sea un poco mágica...{" "}
               </p>
 
-              <div className="flex items-center gap-2 py-14 lg:py-0">
-                <a
-                  className="text-3xl text-white lg:text-2xl"
-                  href="https://apps.apple.com/app/id1561652691?mt=8"
+              <div className="flex items-center gap-2 py-14 md:py-0">
+                <Link
+                  className="text-3xl text-white md:text-2xl"
+                  to="https://apps.apple.com/app/id1561652691?mt=8"
+                  target="_blank"
+                  rel="noopener noreferer"
                 >
-                  Descargar la app 
-                </a>
-                <img className="w-3 rebotar" src="src/assets/arrow.png" alt="Arrow" />
+                  Descargar la app
+                </Link>
+                <img
+                  className="w-3 rebotar"
+                  src="src/assets/arrow.png"
+                  alt="Arrow"
+                />
               </div>
             </div>
             <div>
-              <h2 className="pb-6 text-3xl font-bold text-white lg:pb-16 ">
-                El futuro del <br className="lg:hidden" /> supermercado está{" "}
-                <br className="lg:hidden" /> aquí.
+              <h2 className="pb-8 text-3xl font-bold text-white md:pb-24 ">
+                El futuro del <br className="md:hidden" /> supermercado está{" "}
+                <br className="md:hidden" /> aquí.
               </h2>
               <div>
                 <img
@@ -210,9 +220,9 @@ function Home() {
 
       <section id="how-it-works" className="bg-white">
         <Wrapper>
-          <div className="flex flex-col items-center justify-around px-4 py-16 lg:flex-row ">
-            <div className="flex flex-col items-center justify-center pb-12 lg:pb-12 ">
-              <div className="h-36 lg:h-28">
+          <div className="flex flex-col items-center justify-around py-16 md:flex-row ">
+            <div className="flex flex-col items-center justify-center pb-12 md:pb-12 ">
+              <div className="h-36 md:h-28">
                 <img
                   className="w-24 "
                   src="src/assets/DescargaApp.png"
@@ -223,8 +233,8 @@ function Home() {
                 Descarga la app
               </h3>
             </div>
-            <div className="flex flex-col items-center justify-center pb-12 lg:pb-12 ">
-              <div className="h-36 lg:h-28">
+            <div className="flex flex-col items-center justify-center pb-12 md:pb-12 ">
+              <div className="h-36 md:h-28">
                 <img
                   className="w-24 "
                   src="src/assets/EligeTusProductos.png"
@@ -235,8 +245,8 @@ function Home() {
                 Elige tus productos
               </h3>
             </div>
-            <div className="flex flex-col items-center justify-center pb-12 lg:pb-12 ">
-              <div className="h-36 lg:h-28">
+            <div className="flex flex-col items-center justify-center pb-12 md:pb-12 ">
+              <div className="h-36 md:h-28">
                 <img
                   className="w-16 "
                   src="src/assets/Recibe.png"
@@ -253,34 +263,34 @@ function Home() {
 
       <section className=" bg-green-jokr">
         <Wrapper>
-          <div className="flex flex-col justify-center px-4 pt-10 lg:pt-0 lg:flex-row-reverse">
-            <div className="flex flex-col items-center justify-center lg:items-start ">
+          <div className="flex flex-col justify-center pt-10 md:pt-0 md:flex-row-reverse">
+            <div className="flex flex-col items-center justify-center md:items-start ">
               <h2 className="pb-8 text-5xl font-bold text-light-blue-jokr">
                 ¡Crece tu marca con nosotros!
               </h2>
-              <p className="text-2xl text-light-blue-jokr lg:w-142">
+              <p className="text-2xl text-light-blue-jokr md:w-142">
                 Crece tu participación de venta en línea y crea un mayor
                 reconocimiento de tu marca por medio de nuestra oferta de
                 espacios de publicidad.
               </p>
 
               <div className="mt-10 text-center">
-                <a
-                  className="px-16 py-3 text-2xl transition duration-75 ease-in delay-75 border-2 rounded-full cursor-pointer lg:px-24 lg:py-4 hover:bg-light-blue-jokr hover:text-white border-light-blue-jokr"
-                  href=""
+                <HashLink
+                  className="px-16 py-3 text-2xl transition duration-75 ease-in delay-75 border-2 rounded-full cursor-pointer md:px-24 md:py-4 text-light-blue-jokr hover:bg-light-blue-jokr hover:text-white border-light-blue-jokr"
+                  to="/media"
                 >
-                  Aprende más 
-                </a>
+                  Aprende más
+                </HashLink>
               </div>
             </div>
             <div className="mt-10 ">
               <img
-                className="m-auto lg:hidden"
+                className="m-auto md:hidden"
                 src="src/assets/app-jork-xs.webp"
                 alt="App JOKR"
               />
               <img
-                className="hidden m-auto lg:block w-142"
+                className="hidden m-auto md:block w-142"
                 src="src/assets/app-jokr.webp"
                 alt="App JOKR"
               />

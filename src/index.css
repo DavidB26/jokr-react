@@ -5,6 +5,9 @@
 *{
   scroll-behavior: smooth;
 }
+.border1{
+  border: 1px solid red;
+}
 
 .active{
   color: #57E39E;

@@ -10,7 +10,7 @@ export const menuItems = [
       },
       {
         title: "Como funciona",
-        url: "#how-it-works",
+        url: "/#how-it-works",
       },
       {
         title: "Nuestro manifiesto",

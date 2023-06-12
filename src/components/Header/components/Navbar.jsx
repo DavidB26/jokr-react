@@ -36,10 +36,12 @@ function Navbar({active,setActive}) {
 
   const handleClick = () => {
     const links = menuRef.current.querySelectorAll("li");
-    links.forEach((item) => {
-      item.addEventListener("mousedown", () => {
-        setActive("");
-      });
+    links.forEach((item,index) => {
+      item.addEventListener('mousedown',()=>{
+        console.log('click')
+        index != 2 && setActive('')
+      }
+      )
     });
   };
   return (

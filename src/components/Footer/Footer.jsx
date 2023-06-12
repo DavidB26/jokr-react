@@ -5,9 +5,9 @@ import Icon from "../Icon";
 function Footer() {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="px-10 py-12 bg-dark-blue-jokr">
+    <footer className="py-12 bg-dark-blue-jokr">
       <Wrapper>
-        <div className="flex flex-col justify-between lg:flex-row gap-9">
+        <div className="flex flex-col justify-between md:flex-row gap-9">
           <div className="flex items-center justify-center gap-2 ">
             <div>
               <img
@@ -30,7 +30,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className="p-3 text-center lg:mt-20 lg:text-left">
+        <div className="p-3 text-center md:mt-20 md:text-left">
           <Link
             className="text-lg underline cursor-pointer text-grey-jokr"
             to={"/campanas-promocionales"}
@@ -38,7 +38,7 @@ function Footer() {
             Campañas promocionales
           </Link>
         </div>
-        <div className="p-3 text-center lg:text-left">
+        <div className="p-3 text-center md:text-left">
           <Link
             className="text-lg underline cursor-pointer text-grey-jokr"
             to={"/terminos-y-condiciones"}
@@ -46,7 +46,7 @@ function Footer() {
             Términos y condiciones
           </Link>
         </div>
-        <div className="p-3 text-center lg:text-left">
+        <div className="p-3 text-center md:text-left">
           <Link
             className="text-lg underline cursor-pointer text-grey-jokr"
             to={"/politicas-de-privacidad"}
@@ -55,7 +55,7 @@ function Footer() {
           </Link>
         </div>
 
-        <div className="flex items-center justify-start gap-3 p-3">
+        <div className="flex items-center justify-center gap-3 p-3 md:justify-start">
         <Link rel="noopener noreferrer" to="https://www.facebook.com/jokrperu" target="_blank">
          <Icon nameIcon={"facebook"} />
         </Link>
@@ -67,7 +67,7 @@ function Footer() {
         </Link>
       </div>
 
-        <div className="flex flex-col items-center justify-between gap-5 p-3 text-center lg:text-left lg:flex-row lg:gap-0">
+        <div className="flex flex-col items-center justify-between gap-12 p-3 text-center md:text-left md:flex-row md:gap-0">
           <p className="text-lg cursor-pointer text-grey-jokr">@jokrperu</p>
           <p className="text-xs cursor-pointer text-grey-jokr">
             © {currentYear} by JOKR SAC
