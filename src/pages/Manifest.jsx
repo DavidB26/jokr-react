@@ -4,10 +4,10 @@ function Manifest() {
     <section className="pt-12 pb-20 bg-dark-blue-jokr">
       <Wrapper>
     
-        <div className="flex flex-col-reverse lg:items-start lg:justify-between lg:flex-row">
+        <div className="flex flex-col-reverse lg:items-start lg:justify-between lg:flex-row sm:justify-center sm:items-center sm:flex-row">
           <div className="px-4 lg:px-0 lg:w-142">
-          <h1 className="hidden pb-6 text-5xl font-bold text-center lg:block lg:text-left lg:text-7xl text-green-jokr">
-          Nuestro <br className="hidden lg:block" /> manifiesto
+          <h1 className="hidden pb-6 text-5xl font-bold text-center sm:text-left sm:block lg:block lg:text-left lg:text-7xl text-green-jokr">
+          Nuestro <br className="hidden sm:block lg:block" /> manifiesto
         </h1>
             <p className="pt-12 text-base lg:pt-0 lg:text-2xl text-grey-jokr">
               Es una realidad, nos gusta planear todo en la vida. <br /> Pero las
@@ -42,10 +42,10 @@ function Manifest() {
             </p>
           </div>
           <div>
-          <h2 className="pb-6 text-5xl font-bold text-center lg:hidden lg:text-left lg:text-7xl text-green-jokr">
+          <h2 className="pb-6 text-5xl font-bold text-center sm:hidden md:hidden lg:hidden lg:text-left lg:text-7xl text-green-jokr">
           Nuestro <br className="hidden lg:block" /> manifiesto
         </h2>
-            <div className="relative m-auto mr-0 bg-blue-jokr w-72 h-158 lg:h-238 lg:w-158 lg:pb-0">
+            <div className="relative m-auto mr-0  bg-blue-jokr w-72 h-158 lg:h-238 lg:w-158 lg:pb-0">
               <video className="absolute -translate-y-1/2 min-w-min h-142 top-1/2 right-5 lg:right-0 lg:-left-20 lg:h-217 lg:w-123" controls>
                 <source
                   type="video/webm"
