@@ -6,6 +6,10 @@
   scroll-behavior: smooth;
 }
 
+.active{
+  color: #57E39E;
+}
+
 .animation-eclipse-red {
   animation: fade-in-down-big 1s forwards;
 }
@@ -101,3 +105,11 @@
   height: 50px;
   text-align: center;
 }
+
+.transition-right{
+  transition: right 0.5s;
+}
+
+.nooverflow{
+    overflow: hidden;
+  }

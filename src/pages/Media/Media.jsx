@@ -24,7 +24,7 @@ function Media() {
           />
         </div>
         <div
-          className="px-4 pt-4 bg-center bg-cover h-170 w-full md:h-[828px] md:max-w-[1068px] md:pt-[68px]"
+          className="px-4 pt-4 bg-center bg-cover h-[680px] w-full md:h-[828px] md:max-w-[1068px] md:pt-[68px]"
           style={{ backgroundImage: `url(${MediaImageBanner})` }}
         >
           <div className="flex flex-col gap-2 mx-auto max-w-[847px] md:gap-4 ">

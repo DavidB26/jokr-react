@@ -3,8 +3,18 @@ import Dropdown from "./Dropdown";
 import { Link } from "react-router-dom";
 import Icon from '../../icon/index';
 
-function MenuItem({ items }) {
+function MenuItem({ items, index }) {
   const [dropdown, setDropdown] = useState(false);
+  const [active, setActive] = useState(0)
+  
+  const handleClick = (index) => {
+    return () => {
+      console.log('click');
+      setActive(index);
+      console.log(active)
+    };
+  }
+
   let ref = useRef();
 
   useEffect(() => {
@@ -21,6 +31,9 @@ function MenuItem({ items }) {
     };
   }, [dropdown]);
 
+  useEffect(()=>{
+    handleClick()
+  },[active])
   // const onMouseEnter = () => {
   //   window.innerWidth > 960 && setDropdown(true);
   // };
@@ -30,13 +43,13 @@ function MenuItem({ items }) {
   // };
 
   return (
-    <li className="relative">
+    <li className={`relative ${active === index && 'active'} text-2xl md:text-base`}>
       {items.submenu ? (
         <>
           <button
-            className="flex items-center gap-1 duration-300 hover:text-green-jokr"
+            className="flex items-center gap-1 duration-300 hover:text-grey3-jokr"
             aria-expanded={dropdown ? "true" : "false"}
-            onClick={() => setDropdown((prev) => !prev)}
+            onClick={() => {setDropdown((prev) => !prev); handleClick(index)}}
           >
             {items.title}
             <Icon
@@ -48,7 +61,13 @@ function MenuItem({ items }) {
           <Dropdown submenus={items.submenu} dropdown={dropdown} />
         </>
       ) : (
-        <Link to={items.url} className="duration-300 hover:text-green-jokr">
+        <Link
+          to={items.url}
+          className="duration-300 hover:text-grey3-jokr"
+          target={items.external ? "_blank" : ""}
+          rel="noopener noreferrer"
+          onClick={handleClick(index)}
+        >
           {items.title}
         </Link>
       )}

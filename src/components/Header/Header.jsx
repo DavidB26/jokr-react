@@ -3,8 +3,11 @@ import Icon from "../Icon";
 import LogoJokr from "../Logo-jokr";
 import Navbar from "./components/Navbar";
 import Wrapper from "../Wrapper";
+import Hamburguer from "./components/Hamburguer";
+import { useState } from "react";
 
 function Header() {
+  const [active,setActive] = useState("")
   return (
     <header className="bg-dark-blue-jokr">
       <Wrapper>
@@ -12,7 +15,8 @@ function Header() {
           <Link to="/">
             <LogoJokr />
           </Link>
-          <Navbar />
+          <Navbar active={active} setActive={setActive}/>
+          <Hamburguer active={active} setActive={setActive}/>
         </div>
       </Wrapper>
     </header>
