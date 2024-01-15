@@ -2,6 +2,9 @@
 export default {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
+    fontFamily: {
+      poppins: ["Poppins", "sans-serif"],
+    },
     extend: {
       colors: {
         "grey-jokr": "#7D9DB7",
