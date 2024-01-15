@@ -1,7 +1,7 @@
 import { useRef } from "react";
-import { menuItems } from "../../../utils/menu-items/menu-items"
-import MenuItem from "./MenuItem"
-import styled from 'styled-components'
+import { menuItems } from "../../../utils/menu-items/menu-items";
+import MenuItem from "./MenuItem";
+import styled from "styled-components";
 
 const NavbarStyled = styled.div`
   display: flex;
@@ -17,7 +17,7 @@ const NavbarStyled = styled.div`
   inline-size: 248px;
   z-index: 50;
   color: #85a2b3;
-  
+
   &.active {
     right: 0;
   }
@@ -31,28 +31,26 @@ const NavbarStyled = styled.div`
   }
 `;
 
-function Navbar({active,setActive}) {
+function Navbar({ active, setActive }) {
   const menuRef = useRef();
 
   const handleClick = () => {
     const links = menuRef.current.querySelectorAll("li");
-    links.forEach((item,index) => {
-      item.addEventListener('mousedown',()=>{
-        console.log('click')
-        index != 2 && setActive('')
-      }
-      )
+    links.forEach((item, index) => {
+      item.addEventListener("mousedown", () => {
+        index != 2 && setActive("");
+      });
     });
   };
   return (
     <NavbarStyled ref={menuRef} className={active} onClick={handleClick}>
-      <ul className="flex flex-col gap-8 sm:flex-row">
+      <ul className='flex flex-col gap-8 sm:flex-row'>
         {menuItems.map((menu, index) => {
           return <MenuItem items={menu} key={index} index={index} />;
         })}
       </ul>
     </NavbarStyled>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

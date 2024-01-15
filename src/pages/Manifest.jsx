@@ -1,4 +1,5 @@
 import Wrapper from "../components/Wrapper";
+import VideoManifest from '../assets/video-manifiesto.mp4'
 function Manifest() {
   return (
     <section className="pt-12 pb-20 bg-dark-blue-jokr">
@@ -49,7 +50,7 @@ function Manifest() {
               <video className="absolute -translate-y-1/2 min-w-min h-142 top-1/2 right-5 2xl:right-0 2xl:-left-20 2xl:h-217 2xl:w-123" controls>
                 <source
                   type="video/webm"
-                  src="src/assets/video-manifiesto.mp4"
+                  src={VideoManifest}
                 />
               </video>
             </div>
